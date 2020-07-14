@@ -1,0 +1,144 @@
+/*SET UP COLOURS*/
+:root {
+  --light-grey: #F0F0F0;
+  --dark-grey: #6C6C6C;
+  --red: #A60202;
+  --white: #FFFFFF;
+
+  --header-height: 120px;
+}
+
+/*BODY*/
+body {
+  font-family: "Georgia","Lucida Bright","Cambria","Times New Roman";
+  font-size: 18px;
+  text-align: center;
+  color: var(--dark-grey);
+
+  background-color: var(--white);
+
+  margin: 0;
+}
+/*END OF BODY*/
+
+/*HEADER*/
+header {
+  margin: 0;
+  text-align: center;
+
+  background-color: var(--light-grey);
+
+  height: var(--header-height);
+  padding: 10px 5px;
+}
+
+label {
+  width: 50%;
+  font-size: 14px;
+  margin: 30px;
+}
+
+#topicimg{
+  width:80%;
+}
+
+#menu-icon {
+  float: left;
+  margin: 40px 20px;
+}
+
+#menu-icon:hover {
+  cursor: pointer;
+}
+
+/*END OF HEADER*/
+
+/* SIDE NAV MENU */
+/*https://www.w3schools.com/howto/howto_js_sidenav.asp*/
+#sidenav {
+  text-align: center;
+  font-size: 18px;
+  color: var(--white);
+  background-color: var(--red);
+
+  height: 100%;
+  width: 0px;
+  position: absolute; /* Stay in place so doesnt move with scroll */
+  z-index: 1; /* Sits on top of other elements */
+  top: 140px; /* sits below header */
+  left: 0;
+
+  overflow-x: hidden;
+  padding: 10px 0px;
+
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+#sidenav a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+#sidenav a:hover {
+  text-decoration: none;
+  color: var(--dark-grey);
+}
+
+#sidenav h3 {
+  text-decoration: underline;
+}
+
+.page-link {
+  text-decoration: none;
+  color: var(--red);
+  weight: bold;
+  display: block;
+  padding: 20px;
+}
+
+.page-link:hover {
+  color: var(--white);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* END OF SIDE NAV MENU */
+
+/* MAIN */
+
+.container {
+  width: 75%;
+  margin: auto;
+  background-color: var(--dark-grey);
+  color: var(--light-grey);
+  padding: 10px 10px 10px;
+  margin-top:30px;
+  margin-bottom:30px;
+}
+
+.summary {
+  margin: 0px 20px 20px;
+}
+
+.comments-section {
+  width: 75%;
+  background-color: var(--light-grey);
+  margin: auto;
+  color: var(--dark-grey);
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.comment {
+  text-align: left;
+  margin: 20px 10px;
+  border-radius: 10px;
+  background-color: forestgreen;
+  padding: 10px;
+  color: var(--white);
+}
+
+p {
+  margin: 30px;
+}
+/* END OF MAIN */
