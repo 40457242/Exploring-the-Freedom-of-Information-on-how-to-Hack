@@ -10,13 +10,13 @@ function navToggle()
   if (navOpen)
   {//The menu is open, so close it
     sideNav.style.width = "0";
-    menuIcon.src = "Images/openMenu.png";
+    menuIcon.src = "images/openMenu.png";
     navOpen = false;
   }
   else
   {//The menu is closed, so open it
     sideNav.style.width = "250px";
-    menuIcon.src = "Images/closeMenu.png";
+    menuIcon.src = "images/closeMenu.png";
     navOpen = true;
   }
 }
